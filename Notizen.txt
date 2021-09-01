@@ -1,0 +1,27 @@
+Django installieren - Terminal: pip3 install django
+
+Ein Django Project starten - Terminal: django-admin startproject nameDesProjekts
+
+Einen Django Server starten - Terminal (im Django Project Ordner): python manage.py runserver (das Project ist damit online auf local host)
+
+Wie man eine App auf einem Server hostet - Terminal: python manage.py startapp NameDerApp (erstellt einen einzelnen App Ordner im Projektordner)
+
+Wie man die App im Projekt integriert - im unterproject/settings.py -> in INSTALLED_APPS = [] den "NamenDerApp" als String einfügen
+
+alias für app ausführung -- dort python und python 3 unchecken, damit man den python befehl in cmd ausführen kann
+
+view.py - anything the user sees --> to use the view.py file, we need to import it
+
+Um einzustellen, welche App auf welcher URL ausgeführt wird, muss eine urls.py file pro App Ordner erstellen (dort from django.http import HttpResponse importieren)
+
+
+
+
+
+echo "# TestUpload" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/GutGudHub/TestUpload.git
+git push -u origin main

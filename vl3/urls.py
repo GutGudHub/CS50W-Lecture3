@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls.conf import include, path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),    #standard
+    path("hello/", include("hello.urls"))   #so verlinkt man die path von der App.urls mit der Path von der ganzen Node Projekt.urls
 ]
